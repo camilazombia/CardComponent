@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url("./font/big-shoulders-display/BigShouldersDisplay-Bold.ttf");
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+body{
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 20% 60% 20%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20% 15%;
+}
+
+.container h2{
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    font-size: 35px;
+}
+
+.container p{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 27px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.container img{
+    width: 60px;
+}
+
+.container button{
+    background-color: hsl(0, 0%, 95%);
+    width: 140px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.container-orange{
+    background-color: hsl(31, 77%, 52%);
+    grid-column: 2;
+    grid-row: 2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container-cyanBrigth{
+    background-color: hsl(184, 100%, 22%);
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.container-cyanDark{
+    background-color: hsl(179, 100%, 13%);
+    grid-column: 4;
+    grid-row: 2;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container-orange button{
+    color: hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container-cyanBrigth button{
+    color: hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container-cyanDark button{
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container button:hover{
+    background-color: hsla(0, 0%, 95%, 0.061);
+    color: #fff;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+
+}
+
+@media (max-width: 1200px) {
+body{
+    grid-template-rows: 10% 80% 10%;
+}
+}
+
+
+@media (max-width: 900px) {
+    body{
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: repeat(3,1fr);
+        padding: 150px 0px;
+        height: max-content;
+
+    }
+    .container{
+       height: 400px;
+    }
+  
+.container-orange{
+    background-color: hsl(31, 77%, 52%);
+    grid-column: 2;
+    grid-row: 1;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container-cyanBrigth{
+    background-color: hsl(184, 100%, 22%);
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.container-cyanDark{
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+
+
+}
+}
+
+
+
+
